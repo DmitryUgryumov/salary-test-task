@@ -1,6 +1,15 @@
+// Core
 import { FC } from 'react';
-import '../styles/reset.css';
 
-const App: FC = () => <div></div>;
+// Components
+import Salaries from './Salaries/Salaries';
+
+// Styles
+import '../styles/variables.scss';
+import '../styles/global.scss';
+
+const App: FC = () => {
+  return <Salaries />;
+};
 
 export default App;

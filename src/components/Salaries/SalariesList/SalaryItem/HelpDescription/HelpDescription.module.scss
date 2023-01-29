@@ -1,0 +1,59 @@
+@import "./src/styles/variables";
+
+.helpContainer {
+  border: 1px gray solid;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover .descriptionHidden {
+    display: block;
+  }
+}
+
+.description {
+  position: absolute;
+  top: calc(100% + 18px);
+  left: 10px;
+  color: #FFF;
+  background: $main-purple;
+  padding: 15px;
+  cursor: auto;
+  z-index: 10;
+  min-width: 300px;
+
+  &:after {
+    bottom: 100%;
+    left: 0;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid $main-purple;
+  }
+}
+
+.label {
+  font-size: 12px;
+  color: $main-gray;
+}
+
+.descriptionHidden {
+  display: none;
+}
+
+.descriptionShow {
+  display: block;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #555;
+}

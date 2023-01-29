@@ -1,0 +1,45 @@
+@import "./src/styles/variables";
+
+.toggleContainer {
+  display: flex;
+  gap: 0 20px;
+  margin: 20px 0 0 60px;
+  align-items: center;
+}
+
+.title {
+  color: $main-gray;
+}
+
+.titleActive {
+  color: $main-black;
+}
+
+.toggle {
+  width: 60px;
+  height: 30px;
+  background: $main-orange;
+  border-radius: 30px;
+  position: relative;
+  transition: .3s background;
+  cursor: pointer;
+}
+
+.toggleActive {
+  background: $main-gray;
+}
+
+.circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #FFF;
+  border-radius: 50%;
+  right: 3px;
+  top: calc(50% - 12.5px);
+  transition: .3s margin-right;
+}
+
+.circleActive {
+  margin-right: calc(100% - 31px);
+}

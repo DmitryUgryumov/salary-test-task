@@ -1,0 +1,30 @@
+@import "./src/styles/variables";
+
+.salary {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  cursor: pointer;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 1px $main-gray solid;
+  border-radius: 50%;
+}
+
+.circleActive {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    border-radius: 50%;
+    background: $main-gray;
+  }
+}

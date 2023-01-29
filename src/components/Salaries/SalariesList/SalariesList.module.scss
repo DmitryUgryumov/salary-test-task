@@ -1,0 +1,13 @@
+@import "./src/styles/variables";
+
+.title {
+  color: $main-gray;
+}
+
+.salaries {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  width: 300px;
+  margin-top: 10px;
+}
